@@ -283,8 +283,23 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                   <h2>Project Title</h2>
                   <hr class="star-primary">
                   <img class="img-fluid img-centered" src="<?php echo base_url('assets/img/portfolio/Belajar.jpg');?>" alt="">
-                  <p>Use this area of the page to describe your project. The icon above is part of a free icon set by
-                    <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+ <p>	 
+<h3>Belajar C#</h3>
+C# adalah salah satu keahlian pemrograman yang paling dicari saat ini. C# mirip dengan C++ dalam hal struktur pemrogramannya, 
+akan tetapi juga cenderung ringkas seperti Visual Basic. Sehingga C# menjadi bahasa pemrograman yang hebat dan mudah dipelajari.
+</p>
+<p>
+<h3>Tujuan</h3>
+Tujuan tutorial C# ini adalah membimbing Anda agar dapat membuat suatu aplikasi yang bermanfaat. Ketika Anda selesai mempelajari tutorial ini, 
+Anda paling tidak akan bisa membuat suatu aplikasi windows forms yang berbasis database.
+</p>
+<p>
+<h3>Metode belajar</h3>
+Terkadang, tutorial ini akan menggunakan aplikasi Console untuk mendemontrasikan konsep konsep di dalam tutorial ini, terkadang kita juga akan 
+menggunakan aplikasi Windows Forms. Hal ini dilakukan agar pengalaman belajar di situs ini singkat dan sederhana tapi juga bersifat praktis. 
+Karena sebagian besar dari kita "codeformoney", akan paling baik apabila kita hanya mempelajari keahlian dan pengetahuan yang bersifat praktis, 
+dan kita harus melakukannya dengan cepat. Bukankah begitu?
+				</p>
                   <ul class="list-inline item-details">
                     <li>Client:
                       <strong>
