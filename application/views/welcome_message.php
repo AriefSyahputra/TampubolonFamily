@@ -2,9 +2,17 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
 
+
 <!DOCTYPE html>
 <html lang="en">
-
+<?php
+if (isset($this->session->userdata['logged_in'])) {
+$username = ($this->session->userdata['logged_in']['username']);
+$email = ($this->session->userdata['logged_in']['email']);
+} else {
+header("location: login");
+}
+?>
   <head>
 
     <meta charset="utf-8">

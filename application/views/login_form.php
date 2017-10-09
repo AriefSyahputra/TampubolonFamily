@@ -4,7 +4,7 @@
 <?php
 if (isset($this->session->userdata['logged_in'])) {
 
-header("location: http://localhost/login/index.php/user_authentication/user_login_process");
+header("location: http://localhost:8080/index.php/user_authentication/user_login_process");
 }
 ?>
 <head>
@@ -27,11 +27,12 @@ echo $message_display;
 echo "</div>";
 }
 ?>
+
 <div id="main">
 <div id="login">
 <h2>Login Form</h2>
 <hr/>
-<?php echo form_open('user_authentication/user_login_process'); ?>
+<?php echo form_open('index.php/user_authentication/user_login_process'); ?>
 <?php
 echo "<div class='error_msg'>";
 if (isset($error_message)) {
@@ -46,6 +47,7 @@ echo "</div>";
 <input type="password" name="password" id="password" placeholder="**********"/><br/><br />
 <input type="submit" value=" Login " name="submit"/><br />
 <a href="<?php echo base_url() ?>index.php/user_authentication/user_registration_show">To SignUp Click Here</a>
+
 <?php echo form_close(); ?>
 </div>
 </div>

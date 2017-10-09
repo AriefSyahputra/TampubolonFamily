@@ -1,20 +1,20 @@
 <?php
 
-session_start(); //we need to start session in order to access it through CI
+//session_start(); //we need to start session in order to access it through CI
 
 Class User_Authentication extends CI_Controller {
 
-public function __construct() {
+ function __construct() {
 parent::__construct();
-
+ 
 // Load form helper library
-$this->load->helper('form');
+$this->load->helper('security');
 
 // Load form validation library
 $this->load->library('form_validation');
 
 // Load session library
-//$this->load->library('session.php');
+$this->load->library('Session');
 
 // Load database
 $this->load->model('login_database');
@@ -64,7 +64,7 @@ $this->form_validation->set_rules('password', 'Password', 'trim|required|xss_cle
 
 if ($this->form_validation->run() == FALSE) {
 if(isset($this->session->userdata['logged_in'])){
-$this->load->view('admin_page');
+$this->load->view('welcome_message');
 }else{
 $this->load->view('login_form');
 }
@@ -85,7 +85,7 @@ $session_data = array(
 );
 // Add user data in session
 $this->session->set_userdata('logged_in', $session_data);
-$this->load->view('admin_page');
+$this->load->view('welcome_message');
 }
 } else {
 $data = array(
