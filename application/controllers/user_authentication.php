@@ -64,7 +64,7 @@ $this->form_validation->set_rules('password', 'Password', 'trim|required|xss_cle
 
 if ($this->form_validation->run() == FALSE) {
 if(isset($this->session->userdata['logged_in'])){
-$this->load->view('welcome_message');
+$this->load->view('admin_page');
 }else{
 $this->load->view('login_form');
 }
@@ -85,7 +85,7 @@ $session_data = array(
 );
 // Add user data in session
 $this->session->set_userdata('logged_in', $session_data);
-$this->load->view('welcome_message');
+$this->load->view('admin_page');
 }
 } else {
 $data = array(

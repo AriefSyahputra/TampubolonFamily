@@ -4,7 +4,7 @@
 <?php
 if (isset($this->session->userdata['logged_in'])) {
 
-header("location: http://localhost:8080/index.php/user_authentication/user_login_process");
+header("location: http://localhost:8080/TampubolonFamily/user_authentication/user_login_process");
 }
 ?>
 <head>
@@ -32,7 +32,7 @@ echo "</div>";
 <div id="login">
 <h2>Login Form</h2>
 <hr/>
-<?php echo form_open('index.php/user_authentication/user_login_process'); ?>
+<?php echo form_open('user_authentication/user_login_process'); ?>
 <?php
 echo "<div class='error_msg'>";
 if (isset($error_message)) {
