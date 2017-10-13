@@ -14,18 +14,21 @@ header("location: http://localhost:8080/TampubolonFamily/user_authentication/use
 </head>
 <body>
 <?php
-if (isset($logout_message)) {
-echo "<div class='message'>";
-echo $logout_message;
-echo "</div>";
-}
+	if (isset($logout_message)) 
+	{
+		echo "<div class='message'>";
+		echo $logout_message;
+		echo "</div>";
+	}
 ?>
+
 <?php
-if (isset($message_display)) {
-echo "<div class='message'>";
-echo $message_display;
-echo "</div>";
-}
+	if (isset($message_display)) 
+	{
+		echo "<div class='message'>";
+		echo $message_display;
+		echo "</div>";
+	}
 ?>
 
 <div id="main">
@@ -35,9 +38,10 @@ echo "</div>";
 <?php echo form_open('user_authentication/user_login_process'); ?>
 <?php
 echo "<div class='error_msg'>";
-if (isset($error_message)) {
-echo $error_message;
-}
+	if (isset($error_message)) 
+	{
+		echo $error_message;
+	}
 echo validation_errors();
 echo "</div>";
 ?>
