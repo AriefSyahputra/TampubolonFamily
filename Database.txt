@@ -1,8 +1,19 @@
 create database login;
-CREATE TABLE IF NOT EXISTS `user_login` (
+CREATE TABLE IF NOT EXISTS `user_login` 
+(
 `id` int(11) NOT NULL AUTO_INCREMENT,
 `user_name` varchar(255) NOT NULL,
 `user_email` varchar(255) NOT NULL,
 `user_password` varchar(255) NOT NULL,
 PRIMARY KEY (`id`)
 ) 
+
+CREATE TABLE IF NOT EXISTS `tb_mahasiswa` 
+(
+`nim` int(11) NOT NULL AUTO_INCREMENT,
+`nama` varchar(255) NOT NULL,
+`alamat` varchar(255) NOT NULL,
+`email` varchar(255) NOT NULL,
+PRIMARY KEY (`nim`)
+) 
+

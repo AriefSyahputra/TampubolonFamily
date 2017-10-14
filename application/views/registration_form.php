@@ -3,7 +3,9 @@
 if (isset($this->session->userdata['logged_in'])) {
 header("location: http://localhost:8080/TampubolonFamily/user_authentication/user_login_process");
 }
+
 ?>
+
 <head>
 <title>Registration Form</title>
 <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/style.css');?>">
@@ -14,6 +16,7 @@ header("location: http://localhost:8080/TampubolonFamily/user_authentication/use
 <div id="login">
 <h2>Registration Form</h2>
 <hr/>
+
 <?php
 	echo "<div class='error_msg'>";
 	echo validation_errors();
@@ -50,7 +53,6 @@ header("location: http://localhost:8080/TampubolonFamily/user_authentication/use
 <a href="<?php echo base_url() ?> ">For Login Click Here</a>
 </div>
 </div>
-
 </body>
 </html>
 
