@@ -1,8 +1,8 @@
 <?php
-Class Con_mahasiswa extends Controller {    
+Class Con_mahasiswa extends CI_Controller {    
     function con_mahasiswa()  
     {  
-        parent::Controller();  
+        parent::__construct();  
         $this->load->model('mod_mahasiswa');
         $this->load->helper(array('url','form'));
     }
@@ -11,7 +11,7 @@ Class Con_mahasiswa extends Controller {
         $this->load->view('view_mahasiswa', $data);
     }
      
-    function tambahdata() {
+   function tambahdata() {
         if($this->input->post('submit')){
             $this->mod_mahasiswa->tambah();
             redirect('con_mahasiswa');

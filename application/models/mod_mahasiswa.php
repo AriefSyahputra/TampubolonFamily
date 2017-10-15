@@ -1,5 +1,5 @@
 <?php
-class Mod_mahasiswa extends Model { 
+class Mod_mahasiswa extends CI_Model { 
     function getall() {
         $ambildata = $this->db->get('tb_mahasiswa');
         //jika data ada (lebih dari 0)

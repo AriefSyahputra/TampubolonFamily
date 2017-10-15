@@ -26,8 +26,14 @@ header("location: login");
 	echo "Your Email is " . $email;
 	echo "<br/>";
 	echo "<br/>";
-	$this->load->view('view_mahasiswa');
+	echo anchor('Con_mahasiswa',' Data Mahasiswa'); 
 ?>
+
+	
+
+
+	
+
 
 <b id="logout"><a href="logout">Logout</a></b>
 </div>
